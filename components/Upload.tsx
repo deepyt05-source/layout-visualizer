@@ -101,7 +101,7 @@ const Upload = ({ onComplete }: UploadProps) => {
         {!file ? (
             <div className={`dropzone ${isDragging ? 'is-dragging' : ''}`} onDragOver={handleDragOver} onDragLeave={handleDragLeave} onDrop={handleDrop}>
                 NO FILE
-                <input type="file" className="drop-input" accept=".jpg,.jpeg,.png" disabled={!isSignedIn} onChange={handleChange}/>
+                <input type="file" className="drop-input" accept=".jpg,.jpeg,.png,.webp" disabled={!isSignedIn} onChange={handleChange}/>
                 <div className="drop-content">
                     <div className="drop-icon">
                         <UploadIcon size={20} />
